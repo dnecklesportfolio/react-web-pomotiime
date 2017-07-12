@@ -64,7 +64,8 @@ export const Flex = styled(Div)`
 
 export const Container = styled.div`
   width:300px;
-  margin: 0 auto;
+display:flex;
+flex-direction: column;
 `;
 
 export const Relative = styled(Div)`

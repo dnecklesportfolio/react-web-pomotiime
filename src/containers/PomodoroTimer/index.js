@@ -10,11 +10,20 @@ class PomodoroTimer extends Component {
     this.setState({
       configOpen: !this.state.configOpen
     });
+    console.log("test")
   };
   render() {
     return (
-      <Card>
+      <Card onClick={this.handleClick}>
+        <h1>hh:mm:ss</h1>
+        <h3>Tap here to configure your pomodoro session</h3>
         
+        {this.state.configOpen &&
+            
+              <Card>
+                <img alt="test" src="http://fakeimg.pl/350x200/?text=PomodoroConfig" />
+              </Card>
+            }
       </Card>
     );
   }
@@ -24,7 +33,7 @@ export default PomodoroTimer;
 
 
 /*
-<Card color="red" onClick={this.handleClick}>
+<Card color="red" >
           {" "}<Header textAlign="left" as="h4">
             Pomodoro Timer
           </Header>

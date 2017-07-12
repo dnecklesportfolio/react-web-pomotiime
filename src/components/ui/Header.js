@@ -19,6 +19,7 @@ const Div = styled.div`
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
+    justify-content: center;
     width: 300px;
     min-height: 0;
     padding: 50px 0;

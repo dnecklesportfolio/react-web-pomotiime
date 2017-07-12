@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
-import { Container } from './theme/grid'
+
 import PomodoroTimer from './containers/PomodoroTimer'
 import StopwatchTimer from './containers/StopwatchTimer'
 import ActualTime from './containers/ActualTime'
 
 import './theme/globalStyles';
-import { Header, Card, WelcomeTxt, SecondaryTxt } from "./components/ui";
+import { Header, Card, WelcomeTxt, SecondaryTxt, Container } from "./components/ui";
 
 class PomoTimeMain extends Component {
   render() {
