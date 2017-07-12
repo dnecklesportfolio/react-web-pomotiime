@@ -1,27 +1,33 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
+import { Container } from './theme/grid'
 import PomodoroTimer from './containers/PomodoroTimer'
 import StopwatchTimer from './containers/StopwatchTimer'
 import ActualTime from './containers/ActualTime'
-import { Header,Container } from 'semantic-ui-react'
-import 'semantic-ui-css/semantic.min.css';
+
 import './theme/globalStyles';
+import { Header, Card, WelcomeTxt, SecondaryTxt } from "./components/ui";
+
 class PomoTimeMain extends Component {
   render() {
     return (
-      <Container textAlign='center' style={{width: 350}}>
-   <Header size='large'>Hello Dwayne</Header>
-        <Header as='h5'>  you aren't running any timers currently</Header> 
-    
+      <Container>
+<Header>
+  <WelcomeTxt>Hello Dwayne</WelcomeTxt>
+<SecondaryTxt>You arent running any timers currently</SecondaryTxt>
+    </Header>
         <PomodoroTimer/>
-        <StopwatchTimer/>
-        <ActualTime/>
+  
       </Container>
     );
   }
 }
 
+/*
+      <StopwatchTimer/>
+        <ActualTime/>
+        */
 
 class App extends Component {
   render() {

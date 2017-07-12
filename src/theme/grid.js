@@ -1,6 +1,6 @@
 
 import styled, { css } from 'styled-components';
-import media from 'theme/media';
+import media from './media';
 
 export const Div = styled.div`
   ${({ block }) => block && css`display: block;`}
@@ -63,25 +63,18 @@ export const Flex = styled(Div)`
 `;
 
 export const Container = styled.div`
-  padding-left: 100px;
-  padding-right: 100px;
-  padding-top: 60px;
-  padding-bottom: 80px;
-  ${({ flex }) => flex ? css`display: flex;` : null}
-  ${media.tablet`
-    padding-left: 40px;
-    padding-right: 40px;
-  `}
+  width:300px;
+  margin: 0 auto;
 `;
 
 export const Relative = styled(Div)`
   position: relative;
 `;
 
-export const Col = styled(Div)`
-  ${({ grow }) => grow ? css`flex-grow: ${grow};`: null}
-  ${({ shrink }) => shrink ? css`flex-shrink: ${shrink};`: null}
-  padding-left: 30px;
-  padding-right: 30px;
-`;
-`;
+// export const Col = styled(Div)`
+//   ${({ grow }) => grow ? css`flex-grow: ${grow};`: null}
+//   ${({ shrink }) => shrink ? css`flex-shrink: ${shrink};`: null}
+//   padding-left: 30px;
+//   padding-right: 30px;
+// `;
+// `;

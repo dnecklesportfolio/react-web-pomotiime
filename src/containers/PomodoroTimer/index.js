@@ -1,7 +1,6 @@
 import styled from "styled-components";
 import React, { Component } from "react";
-import { Card, Image, Header } from "semantic-ui-react";
-import "semantic-ui-css/semantic.min.css";
+import { Card } from "../../components/ui";
 
 class PomodoroTimer extends Component {
   state = {
@@ -14,8 +13,18 @@ class PomodoroTimer extends Component {
   };
   render() {
     return (
-      <div>
-        <Card color="red" onClick={this.handleClick}>
+      <Card>
+        
+      </Card>
+    );
+  }
+}
+
+export default PomodoroTimer;
+
+
+/*
+<Card color="red" onClick={this.handleClick}>
           {" "}<Header textAlign="left" as="h4">
             Pomodoro Timer
           </Header>
@@ -30,9 +39,4 @@ class PomodoroTimer extends Component {
               </Card>
             </Card.Content>}
         </Card>
-      </div>
-    );
-  }
-}
-
-export default PomodoroTimer;
+        */
